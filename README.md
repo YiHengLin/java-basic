@@ -1,4 +1,8 @@
 ### TODO
-static factory method </br>
-builder </br>
 State design pattern
+
+
+Static Factory Method: com.ov.basic.Address
+Builer pattern: com.ov.basic.Customer
+Lambda Expressions and Streams: com.ov.java8.LambdaExpressionsAndStream
+
