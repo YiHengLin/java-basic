@@ -1,4 +1,4 @@
-package com.ov.DataStructure;
+package com.ov.datastructure;
 
 import java.util.Collection;
 
