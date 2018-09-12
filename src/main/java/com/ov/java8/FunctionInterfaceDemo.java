@@ -6,8 +6,7 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 
 /**
- * The content is all from Lambda Expression official tutorial
- * @see https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html
+ * The content is all from Lambda Expressions official tutorial
  */
 public class FunctionInterfaceDemo {
 
@@ -41,6 +40,12 @@ public class FunctionInterfaceDemo {
                .map(p -> p.getName())
                .forEach(s -> System.out.println(s));
 
+        // Since lambda expressions does nothing but call an existing method, it's more easy-to-read using Method Reference
+        System.out.println("\nReplace lambda expressions with method reference: ");
+        players.stream()
+                .filter(p -> p.getScore() > 90)
+                .map(Player::getName)
+                .forEach(System.out::println);
     }
 
     // 1. Suppose tester has only one abstract method test() which takes one parameter and returns a boolean value
