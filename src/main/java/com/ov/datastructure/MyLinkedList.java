@@ -72,11 +72,18 @@ public class MyLinkedList<E> {
         return first.item;
     }
 
-
+    /**
+     * Appends all of the elements in the specified collection to the end of this list
+     */
     public boolean addAll(Collection<? extends E> c){
         return addAll(size, c);
     }
 
+    /**
+     * Appends all of the elements in the specified collection to the end of this list,
+     * starting at the specifed position
+     * @param index at which to insert the first element
+     */
     public boolean addAll(int index, Collection<? extends E> c){
         checkIndex(index);
 
